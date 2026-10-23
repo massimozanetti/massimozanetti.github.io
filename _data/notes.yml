@@ -1,0 +1,25 @@
+- title: Constructing general Dobble games with finite projective planes
+  abstract: >-
+    Dobble is a card game where each card is marked with eight different symbols and any two cards always share one, and only one, symbol in common. By identifying cards with lines and symbols with points, it turns out that Dobble is a perfect visualization of a geometric structure called finite projective plane of order $p=7$. For any prime power $q=p^m$, with $m \geq 1$, there exists a finite projective plane of order $q$, which consists of $q^2+q+1$ projective lines and points. Each point is incident with $q+1$ distinct lines and each line is incident with $q+1$ distinct points. Any two lines intersect in one and only one point (Dobble property). Can we construct such projective space? In this note we provide, for any prime power $q=p^m$, an explicit formula to arrange $q^2+q+1$ distinct symbols into groups of $q+1$ elements that constitute the lines of a projective plane, and therefore the cards of a general Dobble game.
+  pdf: /assets/pdf/notes/dobble.pdf
+  url: https://github.com/massimozanetti/dobble-generator
+
+- title: Periodic cubic smoothing splines as a quadratic minimization problem
+  abstract: >-
+    Smoothing cubic splines are an effective tool for approximating points in space by smooth curves. In this note we consider cubic splines with periodic conditions (closed curves) and we prove that the approximation problem can be written as a positive definite quadratic problem. Therefore, smoothing periodic cubic spline approximations can be conveniently obtained by solving a well-conditioned linear system.
+  pdf: /assets/pdf/notes/periodic.pdf
+
+- title: Total Least Squares as a quadratic minimization problem
+  abstract: >-
+    Given a set of points in $\mathbb{R}^d$, the Total Least Squares (TLS) problem aims at finding the affine hyperplane $L \subset \mathbb{R}^d$ such that the sum of the squared orthogonal distances of the points w.r.t. to $L$ is minimized. In this note, we show that the energy to be minimized is a quadratic function of the unitary vector orthogonal to the hyperplane and the matrix defining this quadratic function is the covariance matrix of the points. Therefore, the unitary vector orthogonal to the TLS hyperplane turns out to be the eigenvector of the covariance matrix which is associated to the lowest eigenvalue.
+  pdf: /assets/pdf/notes/total.pdf
+
+- title: Geometrical meaning of the Moore-Penrose pseudo inverse
+  abstract: >-
+    A rectangular real valued linear system $Ax=y$ of size $m \times n$ is completely defined by a linear map $A:\R^n \to \R^m$. Given $y \in \R^m$, by solving the system one attempts to find $x^{\ast} \in \R^n$ such that $y=Ax^{\ast}$. If $A$ is full column rank, its solution $x^{\ast}$ can be computed via the Moore-Penrose pseudo inverse $A^+$ as $x^{\ast}=A^+y$. owever, in general it is $Ax^{\ast} \neq y$. In this note we provide a geometrical interpretation of the Moore-Penrose pseudo inverse $A^+$ and we show that  $Ax^{\ast}$ is the orthogonal projection of $y$ onto the subspace of $\R^m$ spanned by the columns of $A$.
+  pdf: /assets/pdf/notes/geometrical.pdf
+
+- title: Finding the $k$-th rational number in Cantor enumeration, a closed formula
+  abstract: >-
+    Here, we consider the Cantor enumeration of rational numbers and we provide the analytical relationship between the indexing variable $k$ and the numerator/denominator of the $k$-th rational number. We see that this relationship can be given in terms of simple operations: one square root and a few multiplications and sums. The theoretical argument makes use of triangular numbers and some of their simple properties.
+  pdf: /assets/pdf/notes/finding.pdf

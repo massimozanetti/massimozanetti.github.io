@@ -1,115 +1,368 @@
----
----
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title     = {Relativity: the Special and General Theory},
-  author    = {Einstein, Albert},
-  year      = {1920},
-  publisher = {Methuen & Co Ltd},
-  html      = {relativity.html}
+@article{
+	11582_364687,
+	author = {Listiani, Indira Aprilia and Zanetti, Massimo and Bovolo, Francesca},
+	title = {Time Series Change Vector Analysis for Semisupervised Abrupt Land Cover Change Detection},
+	year = {2025},
+	journal = {IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING},
+	volume = {63},
+	url = {https://ieeexplore.ieee.org/document/11184234},
+	doi = {10.1109/tgrs.2025.3615291},
+	pages = {1--15}
+}
+@article{
+	11582_340047,
+	author = {Zanetti, Massimo},
+	title = {A One-Class Classification Model for Burned-Area Detection Based on Mutual Ordering of Normalized Differences},
+	year = {2023},
+	journal = {IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING},
+	volume = {61},
+	abstract = {Global-scale assessment of burned area (BA) is essential for climate studies and open access satellite-borne multispectral (MS) imagery is vital for the mapping purpose. Global characterization of BAs via MS analysis is difficult as it usually requires ancillary data to model local factors such as vegetation types and local ecoclimate systems. This article proposes a novel classification model that exploits certain mathematical properties of normalized difference indexes (NDIs) to build an abstract space of features where the BA class can be learned globally and solely using MS images. The core idea is that, although NDIs are subject to strong intraclass variations, their mutual order (i.e., the sign of their difference) can be robust enough for characterization. By encoding every possible such ordering relation in a binary domain, the feature space turns out to be hyperdimensional, with abstraction capabilities similar to that of neural network (NN) layers. The proposed classification model is one-class and, therefore, is very convenient as it only requires training samples for the positive class to be collected. The model is experimentally validated in an extensive BA detection exercise with Sentinel-2 images that involves recently published global BA reference data. Results are promising as we report higher F1-score than those reported for state-of-the-art BA products currently available, which are obtained through hybrid techniques and multiple data sources. The model also outperforms the well-known and largely used one-class support vector machine (OC-SVM), which is tested in this work for the first time for BA detection at a global scale.},
+	url = {https://ieeexplore.ieee.org/document/10201916},
+	doi = {10.1109/TGRS.2023.3301056},
+	pages = {1--15},
+	pdf = {publications/zanetti2023oneclass.pdf},
+	selected = {true}
 }
 
-@book{einstein1956investigations,
-  bibtex_show = {true},
-  title       = {Investigations on the Theory of the Brownian Movement},
-  author      = {Einstein, Albert},
-  year        = {1956},
-  publisher   = {Courier Corporation},
-  preview     = {brownian-motion.gif}
+@article{
+	11582_330158,
+	author = {Zanetti, Massimo and Saha, Sudipan and Marinelli, Daniele and Magliozzi, Maria Lucia and Zavagli, Massimo and Costantini, Mario and Bovolo, Francesca and Bruzzone, Lorenzo},
+	title = {A System for Burned Area Detection on Multispectral Imagery},
+	year = {2021},
+	journal = {IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING},
+	volume = {60},
+	url = {https://ieeexplore.ieee.org/document/9540754},
+	doi = {10.1109/TGRS.2021.3110280},
+	pages = {1--15}
+}
+@article{
+	11582_323010,
+	author = {Carrer, Leonardo and Donini, Elena and Marinelli, Daniele and Zanetti, Massimo and Mento, Federico and Torri, Elena and Smargiassi, Andrea and Inchingolo, Riccardo and Soldati, Gino and Demi, Libertario and Bovolo, Francesca and Bruzzone, Lorenzo},
+	title = {Automatic Pleural Line Extraction and COVID-19 Scoring from Lung Ultrasound Data},
+	year = {2020},
+	journal = {IEEE TRANSACTIONS ON ULTRASONICS FERROELECTRICS AND FREQUENCY CONTROL},
+	volume = {67},
+	abstract = {Recent works highlighted the significant potential of Lung Ultrasound (LUS) imaging in the management of subjects affected by COVID-19. In general, the development of objective, fast, and accurate automatic methods for LUS data evaluation is still at an early stage. This is particularly true for COVID- 19 diagnostic. In this paper, we propose an automatic and unsupervised method for the detection and localization of the pleural line in LUS data based on the Hidden Markov Model and Viterbi Algorithm. The pleural line localization step is followed by a supervised classification procedure based on the Support Vector Machine (SVM). The classifier evaluates the healthiness level of a patient and, if present, the severity of the pathology, i.e., the score value for each image of a given LUS acquisition. The experiments performed on a variety of LUS data acquired in Italian hospitals with both linear and convex probes highlight the effectiveness of the proposed method. The average overall accuracy in detecting the pleura is 84% and 94% for convex and linear probes, respectively. The accuracy of the SVM classification in correctly evaluating the severity of COVID-19 related pleural line alterations is about 88% and 94% for convex and linear probes, respectively. The results as well as the visualization of the detected pleural line and the predicted score chart, provide a significant support to medical staff for further evaluating the patient condition.},
+	url = {https://ieeexplore.ieee.org/document/9127515},
+	doi = {10.1109/TUFFC.2020.3005512},
+	pages = {2207--2217},
+	number = {11}
+}
+@article{
+	11582_320577,
+	author = {Zanella, Riccardo and Porta, Federica and Ruggiero, Valeria and Zanetti, Massimo},
+	title = {Serial and parallel approaches for image segmentation by numerical minimization of a second-order functional},
+	year = {2018},
+	journal = {APPLIED MATHEMATICS AND COMPUTATION},
+	volume = {318},
+	abstract = {Because of its attractive features, second order segmentation has shown to be a promising tool in remote sensing. A known drawback about its implementation is computational complexity, above all for large set of data. Recently in Zanetti et al. [1], an efficient version of the block-coordinate descent algorithm (BCDA) has been proposed for the minimization of a second order elliptic approximation of the Blake–Zissermann functional. Although the parallelization of linear algebra operations is expected to increase the performance of BCDA when addressing the segmentation of large-size gridded data (e.g., full-scene images or Digital Surface Models (DSMs)), numerical evidence shows that this is not sufficient to get significant reduction of computational time. Therefore a novel approach is proposed which exploits a decomposition technique of the image domain into tiles. The solution can be computed by applying BCDA on each tile in parallel way and combining the partial results corresponding to the different blocks of variables through a proper interconnection rule. We prove that this parallel method (OPARBCDA) generates a sequence of iterates which converges to a critical point of the functional on the level set devised by the starting point. Furthermore, we show that the parallel method can be efficiently implemented even in a commodity multicore CPU. Numerical results are provided to evaluate the efficiency of the parallel scheme on large images in terms of computational cost and its effectiveness with respect to the behavior on the tile junctions.},
+	keywords = {Blake-Zisserman functional; Block coordinate descent methods; Domain decomposition; Parallel interconnection rule; Segmentation; Computational Mathematics; Applied Mathematics},
+	url = {https://www.sciencedirect.com/science/article/abs/pii/S0096300317304721},
+	doi = {10.1016/j.amc.2017.07.021},
+	pages = {153--175},
+	pdf = {publications/zanella2018serial.pdf},
+	selected = {true}
+}
+@article{
+	11582_320583,
+	author = {Benciolini, Battista and Ruggiero, Valeria and Vitti, Alfonso and Zanetti, Massimo},
+	title = {Roof planes detection via a second-order variational model},
+	year = {2018},
+	journal = {ISPRS JOURNAL OF PHOTOGRAMMETRY AND REMOTE SENSING},
+	volume = {138},
+	keywords = {DSM processing; Edge and crease detection; Filtering; Plane detection and modeling; Roof planes; Segmentation; Variational model; Atomic and Molecular Physics, and Optics; Engineering (miscellaneous); Computer Science Applications1707 Computer Vision and Pattern Recognition; Computers in Earth Sciences},
+	url = {www.elsevier.com/inca/publications/store/5/0/3/3/4/0},
+	doi = {10.1016/j.isprsjprs.2018.01.022},
+	pages = {101--120}
+}
+@article{
+	11582_320585,
+	author = {Zanetti, Massimo and Bruzzone, Lorenzo},
+	title = {A Theoretical Framework for Change Detection Based on a Compound Multiclass Statistical Model of the Difference Image},
+	year = {2018},
+	journal = {IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING},
+	volume = {56},
+	keywords = {Change detection; change vector analysis; expectation-maximization algorithm; multispectral multitemporal images; Rician distributions},
+	url = {https://ieeexplore.ieee.org/document/8078269},
+	doi = {10.1109/TGRS.2017.2759663},
+	pages = {1129--1143},
+	number = {2}
+}
+@article{
+	11582_320581,
+	author = {Zanetti, Massimo and Bruzzone, Lorenzo},
+	title = {Piecewise linear approximation of vector-valued images and curves via second-order variational model},
+	year = {2017},
+	journal = {IEEE TRANSACTIONS ON IMAGE PROCESSING},
+	volume = {26},
+	abstract = {Variational models are known to work well for addressing image restoration/regularization problems. However, most of the methods proposed in the literature are defined for scalar inputs and are used on multiband images (such as RGB or multispectral imagery) by the composition of a simple band-wise processing. This involves suboptimal results and may introduce artifacts. Only in a few cases, variational models are extended to the case of vector-valued inputs. However, the known implementations are restricted to the first-order models, while the second-order models are never considered. Thus, typical problems of the first-order models, such as the staircasing effect cannot be overtaken. This paper considers a second-order functional model to function approximation with free discontinuities given by Blake-Zisserman (BZ) and proposes an efficient minimization algorithm in the case of vector-valued inputs. In the BZ model, the Hessian of the solution is penalized outside a set of finite length, therefore the solution is forced to be piecewise linear. Moreover, the model allows the formation of free discontinuities and free gradient discontinuities. The proposed algorithm is applied to difficult color image restoration/regularization problems and to piecewise linear approximation of curves in space.},
+	url = {https://ieeexplore.ieee.org/document/7950953},
+	doi = {10.1109/TIP.2017.2716827},
+	pages = {4414--4429},
+	number = {9},
+	pdf = {publications/zanetti2017piecewise.pdf},
+	selected = {true}
+}
+@article{
+	11582_320579,
+	author = {Zanetti, Massimo and Ruggiero, Valeria and Miranda Jr, Michele},
+	title = {Numerical minimization of a second-order functional for image segmentation},
+	year = {2016},
+	journal = {COMMUNICATIONS IN NONLINEAR SCIENCE AND NUMERICAL SIMULATION},
+	volume = {36},
+	keywords = {Blake–Zisserman functional; Variational segmentation; Edge-crease detection; Block-coordinate descent method},
+	abstract = {In this paper we address the numerical minimization of a variational approximation of the Blake–Zisserman functional given by Ambrosio, Faina and March. Our approach exploits a compact matricial formulation of the objective functional and its decomposition into quadratic sparse convex sub-problems. This structure is well suited for using a block-coordinate descent method that cyclically determines a descent direction with respect to a block of variables by few iterations of a preconditioned conjugate gradient algorithm. We prove that the computed search directions are gradient related and, with convenient step-sizes, we obtain that any limit point of the generated sequence is a stationary point of the objective functional. An extensive experimentation on different datasets including real and synthetic images and digital surface models, enables us to conclude that: (1) the numerical method has satisfying performance in terms of accuracy and computational time; (2) a minimizer of the proposed discrete functional preserves the expected good geometrical properties of the Blake–Zisserman functional, i.e., it is able to detect first and second order edge-boundaries in images and (3) the method allows the segmentation of large images.},
+	doi = {10.1016/j.cnsns.2015.12.018},
+	pages = {528--548},
+	pdf = {publications/zanetti2016numerical.pdf},
+	selected = {true}
+}
+@article{
+	11582_300256,
+	author = {Zanetti, Massimo and Bovolo, Francesca and Bruzzone, Lorenzo and Zanetti, Massimo},
+	title = {Rayleigh-Rice Mixture Parameter Estimation via EM Algorithm for Change Detection in Multispectral Images},
+	year = {2015},
+	journal = {IEEE TRANSACTIONS ON IMAGE PROCESSING},
+	volume = {24},
+	abstract = {The problem of estimating the parameters of a Rayleigh-Rice mixture density is often encountered in image analysis (e.g., remote sensing and medical image processing). In this paper, we address this general problem in the framework of change detection (CD) in multitemporal and multispectral images. One widely used approach to CD in multispectral images is based on the change vector analysis. Here, the distribution of the magnitude of the difference image can be theoretically modeled by a Rayleigh-Rice mixture density. However, given the complexity of this model, in applications, a Gaussian-mixture approximation is often considered, which may affect the CD results. In this paper, we present a novel technique for parameter estimation of the Rayleigh-Rice density that is based on a specific definition of the expectation-maximization algorithm. The proposed technique, which is characterized by good theoretical properties, iteratively updates the parameters and does not depend on specific optimization routines. Several numerical experiments on synthetic data demonstrate the effectiveness of the method, which is general and can be applied to any image processing problem involving the Rayleigh-Rice mixture density. In the CD context, the Rayleigh-Rice model (which is theoretically derived) outperforms other empirical models. Experiments on real multitemporal and multispectral remote sensing images confirm the validity of the model by returning significantly higher CD accuracies than those obtained by using the state-of-the-art approaches.},
+	doi = {10.1109/TIP.2015.2474710},
+	pages = {5004--5016},
+	number = {12},
+	pdf = {publications/zanetti2015rayleigh.pdf},
+	selected = {true}
+}
+@article{
+	11582_262619,
+	author = {Liu, S. and Bruzzone, L. and Bovolo, Francesca and Zanetti, M. and Du, P. and Zanetti, Massimo},
+	title = {Sequential Spectral Change Vector Analysis for Iteratively Discovering and Detecting Multiple Changes in Hyperspectral Images},
+	year = {2015},
+	journal = {IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING},
+	url = {http://ieeexplore.ieee.org/document/7051247/},
+	doi = {10.1109/TGRS.2015.2396686},
+	pages = {4363--4378}
 }
 
-@article{einstein1950meaning,
-  abbr        = {AJP},
-  bibtex_show = {true},
-  title       = {The meaning of relativity},
-  author      = {Einstein, Albert and Taub, AH},
-  journal     = {American Journal of Physics},
-  volume      = {18},
-  number      = {6},
-  pages       = {403--404},
-  year        = {1950},
-  publisher   = {American Association of Physics Teachers}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@inbook{
+	11582_331382,
+	author = {Zanetti, Massimo and Bovolo, Francesca and Bruzzone, Lorenzo},
+	title = {Statistical Difference Models for Change Detection in Multispectral Images},
+	year = {2021},
+	volume = {1},
+	booktitle = {Change Detection and Image Time Series Analysis 1: Unsupervised Methods},
+	url = {https://onlinelibrary.wiley.com/doi/10.1002/9781119882268.ch9},
+	doi = {10.1002/9781119882268.ch9},
+	isbn = {9781789450569},	
+	isbn = {9781119882268},	
+	pages = {223--274}
 }
 
-@article{PhysRev.47.777,
-  abbr              = {PhysRev},
-  title             = {Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author            = {Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract          = {In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal           = {Phys. Rev.},
-  location          = {New Jersey},
-  volume            = {47},
-  issue             = {10},
-  pages             = {777--780},
-  numpages          = {0},
-  year              = {1935},
-  month             = {May},
-  publisher         = aps,
-  doi               = {10.1103/PhysRev.47.777},
-  url               = {https://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html              = {https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf               = {example_pdf.pdf},
-  altmetric         = {248277},
-  dimensions        = {true},
-  google_scholar_id = {qyhmnyLat1gC},
-  video             = {https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info   = {. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation        = {* Example use of superscripts<br>† Albert Einstein},
-  selected          = {true},
-  inspirehep_id     = {3255}
-}
 
-@article{einstein1905molekularkinetischen,
-  title     = {{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author    = {Einstein, A.},
-  journal   = {Annalen der physik},
-  volume    = {322},
-  number    = {8},
-  pages     = {549--560},
-  year      = {1905},
-  publisher = {Wiley Online Library}
-}
 
-@article{einstein1905movement,
-  abbr    = {Ann. Phys.},
-  title   = {Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author  = {Einstein, A.},
-  journal = {Ann. Phys.},
-  volume  = {17},
-  pages   = {549--560},
-  year    = {1905}
-}
 
-@article{einstein1905electrodynamics,
-  title  = {On the electrodynamics of moving bodies},
-  author = {Einstein, A.},
-  year   = {1905}
-}
 
-@article{einstein1905photoelectriceffect,
-  bibtex_show = {true},
-  abbr        = {Ann. Phys.},
-  title       = {{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}},
-  author      = {Albert Einstein},
-  abstract    = {This is the abstract text.},
-  journal     = {Ann. Phys.},
-  volume      = {322},
-  number      = {6},
-  pages       = {132--148},
-  year        = {1905},
-  doi         = {10.1002/andp.19053220607},
-  award       = {Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name  = {Nobel Prize}
-}
 
-@book{przibram1967letters,
-  bibtex_show = {true},
-  title       = {Letters on wave mechanics},
-  author      = {Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year        = {1967},
-  publisher   = {Vision},
-  preview     = {wave-mechanics.gif},
-  abbr        = {Vision}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@conference{
+	11582_321324,
+	author = {Bovolo, F. and Bruzzone, L. and Fernández-Prieto, D. and Paris, C. and Solano-Correa, Y. T. and Volden, E. and Zanetti, M.},
+	title = {Big Data from Space for Precision Agriculture Applications},
+	year = {2019},
+	booktitle = {Proceedings 11th International symposium on Digital Earth},
+	url = {https://digitalearth2019.eu/}
+}
+@conference{
+	11582_320906,
+	author = {Zanetti, Massimo and Vitti, Alfonso},
+	title = {The Blake-Zisserman model for digital surface models segmentation},
+	year = {2013},
+	publisher = {Copernicus Publications},
+	volume = {II-5/W2},
+	booktitle = {ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences},
+	url = {https://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/II-5-W2/355/2013/},
+	doi = {10.5194/isprsannals-II-5-W2-355-2013},
+	pages = {355--360}
+}
+@conference{
+	11582_311321,
+	author = {Bruzzone, Lorenzo and Bovolo, Francesca and Paris, Claudia and Solano Correa, Yady Tatiana and Zanetti, Massimo and Fernandez Prieto, Diego},
+	title = {Analysis of multitemporal Sentinel-2 images in the framework of the ESA Scientific Exploitation of Operational Missions},
+	year = {2017},
+	booktitle = {9th International Workshop on the Analysis of Multitemporal Remote Sensing Images (MultiTemp), 2017},
+	url = {http://ieeexplore.ieee.org/document/8035230/},
+	doi = {10.1109/Multi-Temp.2017.8035230},
+	isbn = {978-1-5386-3327-4},	
+	pages = {1--4}
+}
+@conference{
+	11582_320896,
+	author = {Zanetti, Massimo and Bruzzone, Lorenzo},
+	title = {A class-wise spatial-contextual approach based on a free discontinuity model for change detection in multispectral images},
+	year = {2017},
+	publisher = {IEEE},
+	booktitle = {Proceedings 2017 IEEE International Geoscience and Remote Sensing Symposium (IGARSS)},
+	url = {https://ieeexplore.ieee.org/document/8127817},
+	doi = {10.1109/IGARSS.2017.8127817},
+	isbn = {978-1-5090-4951-6},	
+	pages = {3759--3762}
+}
+@conference{
+	11582_320900,
+	author = {Zanetti, Massimo and Zanella, Riccardo and Bruzzone, Lorenzo},
+	title = {A tiling procedure for second-order variational segmentation of large size remote sensing images},
+	year = {2016},
+	publisher = {IEEE},
+	booktitle = {Proceedings of 2016 IEEE International Geoscience and Remote Sensing Symposium},
+	url = {https://ieeexplore.ieee.org/document/7730801},
+	doi = {10.1109/IGARSS.2016.7730801},
+	isbn = {978-1-5090-3332-4},	
+	pages = {6902--6905}
+}
+@conference{
+	11582_320902,
+	author = {Zanetti, Massimo and Bruzzone, Lorenzo},
+	title = {A generalized statistical model for binary change detection in multispectral images},
+	year = {2016},
+	publisher = {IEEE},
+	booktitle = {Proceedings of the 2016 IEEE International Geoscience and Remote Sensing Symposium Proceedings},
+	url = {https://ieeexplore.ieee.org/document/7729873},
+	doi = {10.1109/IGARSS.2016.7729873},
+	isbn = {978-1-5090-3332-4},	
+	pages = {3378--3381}
+}
+@conference{
+	11582_320898,
+	author = {Zanetti, Massimo and Bruzzone, Lorenzo},
+	title = {Edge-crease detection and surface reconstruction from point clouds using a second-order variational model},
+	year = {2014},
+	publisher = {Bellingham, WA: SPIE},
+	volume = {9244},
+	booktitle = {Image and Signal Processing for Remote Sensing XX. Proc. of SPIE},
+	url = {http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=1918483},
+	doi = {10.1117/12.2069666},
+	isbn = {9781628413076},	
+}
+@conference{
+	11582_320904,
+	author = {Zanetti, Massimo and Bruzzone, Lorenzo and Diego, F. Prieto},
+	title = {A Multivariate Change Vector Analysis System for Unsupervised Detection of Clear-Cuts in Sentinel-2 Time Series of the Indonesian Forest},
+	year = {2018},
+	publisher = {IEEE},
+	booktitle = {Proceedings of IGARSS 2018 - 2018 IEEE International Geoscience and Remote Sensing Symposium},
+	url = {https://ieeexplore.ieee.org/document/8519185},
+	doi = {10.1109/IGARSS.2018.8519185},
+	isbn = {978-1-5386-7150-4},	
+	pages = {1942--1945}
+}
+@conference{
+	11582_320044,
+	author = {Zanetti, Massimo and Marinelli, Daniele and Bertoluzza, Manuel and Saha, Sudipan and Bovolo, Francesca and Bruzzone, Lorenzo and Magliozzi, Maria Lucia and Zavagli, Massimo and Costantini, Mario},
+	title = {A high resolution burned area detector for Sentinel-2 and Landsat-8},
+	year = {2019},
+	publisher = {IEEE},
+	booktitle = {Proceedings of 10th International Workshop on the Analysis of Multitemporal Remote Sensing Images (MultiTemp)},
+	url = {https://ieeexplore.ieee.org/document/8866958},
+	doi = {10.1109/Multi-Temp.2019.8866958},
+	isbn = {978-1-7281-4615-7},	
+	pages = {1--4}
+}
+@conference{
+	11582_320894,
+	author = {Zanella, Riccardo and Zanetti, Massimo and Ruggiero, Valeria},
+	title = {A parallel approach for image segmentation by numerical minimization of a second-order functional},
+	year = {2016},
+	publisher = {AIP},
+	volume = {1776},
+	booktitle = {AIP Conference Proceedings 1776: 2nd International Conference Numerical Computations (NUMTA-2016) - Theory and Algorithms},
+	url = {https://aip.scitation.org/doi/10.1063/1.4965399},
+	doi = {10.1063/1.4965399},
+	isbn = {978-0-7354-1438-9},	
+	number = {1}
+}
+@conference{
+	11582_316089,
+	author = {Bovolo, F. and Bruzzone, L. and Fernandez-Prieto, D. and Paris, Claudia and Solano-Correa, Y. T. and Zanetti, Massimo},
+	title = {Advanced Methods for the Analysis of Multitemporal Sentinel 2 Images},
+	year = {2018},
+	booktitle = {2nd GTTI Radar and Remote Sensing Workshop 2018}
+}
+@conference{
+	11582_350807,
+	author = {Zanetti, Massimo and Bovolo, Francesca},
+	title = {One-Class Classification Of Vegetation Related Changes Via Mutual Ordering Of Normalized Differences},
+	year = {2024},
+	volume = {5},
+	booktitle = {Proceedings of the 2024 IEEE International Geoscience and Remote Sensing Symposium Proceedings},
+	url = {https://ieeexplore.ieee.org/document/10642100},
+	doi = {10.1109/igarss53475.2024.10642100},
+	pages = {8678--8682}
+}
+@conference{
+	11582_342547,
+	author = {Listiani, Indira Aprilia and Bovolo, Francesca and Zanetti, Massimo},
+	title = {A theoretical framework for unsupervised land cover change detection in dense satellite image time series},
+	year = {2023},
+	booktitle = {Proc. SPIE 12733, Image and Signal Processing for Remote Sensing XXIX},
+	url = {https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12733/2679728/A-theoretical-framework-for-unsupervised-land-cover-change-detection-in/10.1117/12.2679728.short?SSO=1},
+	doi = {10.1117/12.2679728},
+	isbn = {9781510666955},	
+	isbn = {9781510666962},	
+}
+@conference{
+	11582_354187,
+	author = {Zanetti, Massimo and Palm, Stephan and Bovolo, Francesca},
+	title = {Instantaneous infrastructure monitoring by Earth observation: SAR-based railway obstacle detection},
+	year = {2024},
+	booktitle = {Proceedings Volume 13196, Artificial Intelligence and Image and Signal Processing for Remote Sensing XXX},
+	url = {https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13196/3031582/Instantaneous-infrastructure-monitoring-by-Earth-observation--SAR-based-railway/10.1117/12.3031582.short},
+	doi = {10.1117/12.3031582},
+	number = {131960Z}
+}
+@conference{
+	11582_351807,
+	author = {Listiani, Indira Aprilia and Zanetti, Massimo and Bovolo, Francesca},
+	title = {Time Series Directional Change Vector Analysis},
+	year = {2024},
+	booktitle = {Proceedings of IGARSS 2024 - 2024 IEEE International Geoscience and Remote Sensing Symposium},
+	url = {https://ieeexplore.ieee.org/document/10642170},
+	doi = {10.1109/igarss53475.2024.10642170},
+	pages = {8683--8686}
+}
+@conference{
+	11582_334197,
+	author = {Bruzzone, L. and Bovolo, F. and Gamba, P. and Maggiolo, L. and Meshkini, K. and Moser, G. and Paris, C. and Perantoni, G. and Podsiadlo, I. and Solarna, D. and Sorriso, T. and Zanetti, M.},
+	title = {ESA CCI High Resolution Land Cover: Methodology and EO Data Processing Chain},
+	year = {2022},
+	booktitle = {ESA Living Planet Symposium}
 }
