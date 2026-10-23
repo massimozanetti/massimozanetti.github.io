@@ -2,12 +2,13 @@
   abstract: >-
     Dobble is a card game where each card is marked with eight different symbols and any two cards always share one, and only one, symbol in common. By identifying cards with lines and symbols with points, it turns out that Dobble is a perfect visualization of a geometric structure called finite projective plane of order $p=7$. For any prime power $q=p^m$, with $m \geq 1$, there exists a finite projective plane of order $q$, which consists of $q^2+q+1$ projective lines and points. Each point is incident with $q+1$ distinct lines and each line is incident with $q+1$ distinct points. Any two lines intersect in one and only one point (Dobble property). Can we construct such projective space? In this note we provide, for any prime power $q=p^m$, an explicit formula to arrange $q^2+q+1$ distinct symbols into groups of $q+1$ elements that constitute the lines of a projective plane, and therefore the cards of a general Dobble game.
   pdf: /assets/pdf/notes/dobble.pdf
-  url: https://github.com/massimozanetti/dobble-generator
+  github: https://github.com/massimozanetti/dobble-generator
 
 - title: Periodic cubic smoothing splines as a quadratic minimization problem
   abstract: >-
     Smoothing cubic splines are an effective tool for approximating points in space by smooth curves. In this note we consider cubic splines with periodic conditions (closed curves) and we prove that the approximation problem can be written as a positive definite quadratic problem. Therefore, smoothing periodic cubic spline approximations can be conveniently obtained by solving a well-conditioned linear system.
   pdf: /assets/pdf/notes/periodic.pdf
+  matlab: https://it.mathworks.com/matlabcentral/fileexchange/59463-smoothing-cubic-splines-with-periodic-conditions
 
 - title: Total Least Squares as a quadratic minimization problem
   abstract: >-

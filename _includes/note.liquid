@@ -6,16 +6,29 @@
     <a href="{{ include.doc.pdf | relative_url }}"
        target="_blank" rel="noopener"
        title="Open PDF" aria-label="Open PDF">
-      <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+      <img src="{{ '/assets/img/pdf.ico' | relative_url }}"
+           alt=""
+           style="width: 1.25rem; height: 1.25rem; vertical-align: middle;">
     </a>
   {% endif %}
 
-  {% if include.doc.url %}
-    <a href="{{ include.doc.url | escape }}"
+  {% if include.doc.github %}
+    <a href="{{ include.doc.github | escape }}"
        target="_blank" rel="noopener"
-       title="View on GitHub" aria-label="View on GitHub"
-       style="margin-left: 0.75rem;">
-      <i class="fa-brands fa-github" aria-hidden="true"></i>
+       title="View on GitHub" aria-label="View on GitHub">
+       <img src="{{ '/assets/img/github.ico' | relative_url }}"
+           alt=""
+           style="width: 1.25rem; height: 1.25rem; vertical-align: middle;">
+    </a>
+  {% endif %}
+
+  {% if include.doc.matlab %}
+    <a href="{{ include.doc.matlab | escape }}"
+       target="_blank" rel="noopener"
+       title="View MATLAB code" aria-label="View MATLAB code">
+      <img src="{{ '/assets/img/matlab.ico' | relative_url }}"
+           alt=""
+           style="width: 1.25rem; height: 1.25rem; vertical-align: middle;">
     </a>
   {% endif %}
 
